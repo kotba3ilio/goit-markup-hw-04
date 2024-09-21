@@ -198,9 +198,8 @@ img {
 
 .social_list {
   display: flex;
-  justify-content: space-around;
-  margin-top: 8px;
-  margin-bottom: 32px;
+  justify-content: center;
+  gap: 24px;
 }
 
 .soclial_list_icon {
@@ -290,7 +289,7 @@ img {
 }
 
 .card_body {
-  padding-top: 32px;
+  padding: 32px 0;
 }
 
 .card_body-portfolio {
