@@ -105,7 +105,10 @@ img {
 .hero {
   padding: 188px 0;
   background-color: #2E2F42;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-image.png');
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url('../images/hero-image.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1440px;
@@ -134,6 +137,11 @@ img {
   height: 56px;
   margin: 48px auto 0;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover {
+  background-color: #404BBF;
 }
 
 .visually-hidden {
@@ -167,8 +175,11 @@ img {
 }
 
 .feature_list_icon_wrapper {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 112px;
   background-color: #F4F4FD;
   border: 1px solid #8E8F99;
   border-radius: 4px;
@@ -178,8 +189,6 @@ img {
 
 .feature_list_icon {
   display: block;
-  width: 64px;
-  height: 64px;
   margin: 0 auto;
 }
 
